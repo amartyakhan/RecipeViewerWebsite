@@ -101,115 +101,111 @@
         </div>
     </header>
 
-    <!-- App Highlights -->
+    <!-- App Highlights & Features -->
     <section id="features" class="bg-white">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-16">
                 <h2 class="text-4xl font-bold mb-4">Everything you need to cook better</h2>
-                <p class="text-slate-500 max-w-2xl mx-auto text-lg">Built with the modern home chef in mind, powered by state-of-the-art AI.</p>
+                <p class="text-slate-500 max-w-2xl mx-auto text-lg">Built with the modern home chef in mind, powered by Google's Gemini AI.</p>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- AI Feature -->
-                <div class="material-card p-8 border border-slate-100">
-                    <div class="w-14 h-14 bg-orange-100 rounded-2xl flex items-center justify-center text-orange-600 text-2xl mb-6">
-                        <i class="fas fa-robot"></i>
+            <!-- Feature 1: AI Extraction & Add Recipe -->
+            <div class="flex flex-col md:flex-row items-center gap-16 mb-24">
+                <div class="flex-1 space-y-6">
+                    <div class="inline-flex items-center justify-center p-3 bg-orange-100 rounded-2xl text-orange-600 mb-2">
+                        <i class="fas fa-robot text-2xl"></i>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4">AI Recipe Extraction</h3>
-                    <p class="text-slate-600 leading-relaxed">
-                        Just paste a URL. RecipeViewer uses AI to instantly extract ingredients and steps, saving you from tedious manual entry.
+                    <h3 class="text-3xl font-bold">AI-Powered Recipe Extraction</h3>
+                    <p class="text-lg text-slate-600 leading-relaxed">
+                        Add recipes simply by pasting a URL. The app uses the Google AI SDK (Gemini 1.5 Flash) to parse websites and extract structured recipe data, including ingredients, steps, and timing.
                     </p>
                 </div>
+                <div class="flex-1 flex justify-center">
+                    <img src="screenshots/Screenshot_20260324_114649.png" alt="AI Extraction" class="app-screenshot">
+                </div>
+            </div>
 
-                <!-- Scaling Feature -->
-                <div class="material-card p-8 border border-slate-100">
-                    <div class="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center text-blue-600 text-2xl mb-6">
-                        <i class="fas fa-expand-arrows-alt"></i>
+            <!-- Feature 2: Discover Recipes -->
+            <div class="flex flex-col md:flex-row-reverse items-center gap-16 mb-24">
+                <div class="flex-1 space-y-6">
+                    <div class="inline-flex items-center justify-center p-3 bg-blue-100 rounded-2xl text-blue-600 mb-2">
+                        <i class="fas fa-compass text-2xl"></i>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4">Smart Scaling</h3>
-                    <p class="text-slate-600 leading-relaxed">
-                        Cooking for more or less? Scale ingredients instantly by 0.5x, 2x, or set a custom multiplier with one tap.
+                    <h3 class="text-3xl font-bold">Discover Recipes</h3>
+                    <p class="text-lg text-slate-600 leading-relaxed">
+                        Explore a global collection of recipes shared by the community. Find inspiration and save new favorites to your personal collection with a single tap.
                     </p>
                 </div>
+                <div class="flex-1 flex justify-center">
+                    <img src="screenshots/Screenshot_20260324_114550.png" alt="Discover Recipes" class="app-screenshot">
+                </div>
+            </div>
 
-                <!-- Design Feature -->
-                <div class="material-card p-8 border border-slate-100">
-                    <div class="w-14 h-14 bg-purple-100 rounded-2xl flex items-center justify-center text-purple-600 text-2xl mb-6">
-                        <i class="fas fa-paint-brush"></i>
+            <!-- Feature 3: Cook Mode & Checklist -->
+            <div class="flex flex-col md:flex-row items-center gap-16 mb-24">
+                <div class="flex-1 space-y-6">
+                    <div class="inline-flex items-center justify-center p-3 bg-green-100 rounded-2xl text-green-600 mb-2">
+                        <i class="fas fa-list-check text-2xl"></i>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4">Material You</h3>
-                    <p class="text-slate-600 leading-relaxed">
-                        A beautiful interface built with Material 3. On Android 12+, the app's colors adapt dynamically to your wallpaper.
+                    <h3 class="text-3xl font-bold">Cook Mode & Grouped Instructions</h3>
+                    <p class="text-lg text-slate-600 leading-relaxed">
+                        <strong class="text-slate-900">Cook Mode:</strong> A dedicated step-by-step slideshow mode that keeps your screen on while you cook. Each step displays the specific ingredients needed for that instruction.<br><br>
+                        <strong class="text-slate-900">Grouped Instructions:</strong> Supports complex recipes by organizing steps and ingredients into logical parts (e.g., "The Dough", "The Filling").<br><br>
+                        <strong class="text-slate-900">Ingredient Checklist:</strong> Keep track of your progress by marking ingredients as gathered or prepared. Your progress is synced between the recipe overview and Cook Mode.
                     </p>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Feature: Cook Mode & Scaling -->
-    <section class="bg-slate-50">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
-            <div class="flex-1 space-y-8">
-                <h2 class="text-4xl font-bold">Step-by-Step Cook Mode</h2>
-                <div class="space-y-6">
-                    <div class="flex gap-4">
-                        <div class="flex-shrink-0 w-8 h-8 rounded-full bg-orange-500 text-white flex items-center justify-center font-bold">1</div>
-                        <div>
-                            <h4 class="text-xl font-bold">Slideshow Interface</h4>
-                            <p class="text-slate-600">Focus on one step at a time with large, clear text designed for the kitchen counter.</p>
-                        </div>
-                    </div>
-                    <div class="flex gap-4">
-                        <div class="flex-shrink-0 w-8 h-8 rounded-full bg-orange-500 text-white flex items-center justify-center font-bold">2</div>
-                        <div>
-                            <h4 class="text-xl font-bold">Screen Always On</h4>
-                            <p class="text-slate-600">No more messy fingers on your screen. The display stays awake while you're in Cook Mode.</p>
-                        </div>
-                    </div>
-                    <div class="flex gap-4">
-                        <div class="flex-shrink-0 w-8 h-8 rounded-full bg-orange-500 text-white flex items-center justify-center font-bold">3</div>
-                        <div>
-                            <h4 class="text-xl font-bold">Integrated Checklist</h4>
-                            <p class="text-slate-600">Mark ingredients as you prep. Progress is synced perfectly between the overview and cook mode.</p>
-                        </div>
-                    </div>
+                <div class="flex-1 flex justify-center">
+                    <img src="screenshots/Screenshot_20260324_114620.png" alt="Cook Mode" class="app-screenshot">
                 </div>
             </div>
-            <div class="flex-1 grid grid-cols-2 gap-4">
-                <!-- Screenshot 1: Ingredient Scaling / Recipe Detail -->
-                <img src="Screenshot_20260209_221255.png" alt="Recipe Scaling" class="app-screenshot">
-                <!-- Screenshot 2: Cook Mode / Slideshow -->
-                <img src="Screenshot_20260209_221303.png" alt="Cook Mode" class="app-screenshot mt-12">
-            </div>
-        </div>
-    </section>
 
-    <!-- Feature: Organization & Privacy -->
-    <section id="privacy" class="bg-white">
-        <div class="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center gap-16">
-            <div class="flex-1">
-                <!-- Screenshot 3: Recipe List / Organization -->
-                <img src="Screenshot_20260209_221046.png" alt="My Recipes List" class="app-screenshot">
+            <!-- Feature 4: Ingredient Scaling -->
+            <div class="flex flex-col md:flex-row-reverse items-center gap-16 mb-24">
+                <div class="flex-1 space-y-6">
+                    <div class="inline-flex items-center justify-center p-3 bg-purple-100 rounded-2xl text-purple-600 mb-2">
+                        <i class="fas fa-expand-arrows-alt text-2xl"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold">Dynamic Ingredient Scaling</h3>
+                    <p class="text-lg text-slate-600 leading-relaxed">
+                        Adjust recipe quantities on the fly with presets (0.5x, 1x, 2x) or enter a custom multiplier to scale your ingredients precisely.
+                    </p>
+                </div>
+                <div class="flex-1 flex justify-center">
+                    <img src="screenshots/Screenshot_20260324_114606.png" alt="Ingredient Scaling" class="app-screenshot">
+                </div>
             </div>
-            <div class="flex-1">
-                <h2 class="text-4xl font-bold mb-6">Your Data, Your Device</h2>
-                <p class="text-xl text-slate-600 mb-8 leading-relaxed">
-                    We believe your recipe collection is personal. That's why RecipeViewer stores all data locally on your device.
-                </p>
-                <ul class="space-y-4 text-lg">
-                    <li class="flex items-center gap-3 text-slate-700">
-                        <i class="fas fa-check-circle text-green-500"></i>
-                        No mandatory cloud accounts
-                    </li>
-                    <li class="flex items-center gap-3 text-slate-700">
-                        <i class="fas fa-check-circle text-green-500"></i>
-                        Offline access to all recipes
-                    </li>
-                    <li class="flex items-center gap-3 text-slate-700">
-                        <i class="fas fa-check-circle text-green-500"></i>
-                        No tracking or data sales
-                    </li>
-                </ul>
+
+            <!-- Feature 5: Material You Design -->
+            <div class="flex flex-col md:flex-row items-center gap-16 mb-24">
+                <div class="flex-1 space-y-6">
+                    <div class="inline-flex items-center justify-center p-3 bg-pink-100 rounded-2xl text-pink-600 mb-2">
+                        <i class="fas fa-paint-brush text-2xl"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold">Material You Design</h3>
+                    <p class="text-lg text-slate-600 leading-relaxed">
+                        A beautiful, modern UI built with Material 3, featuring Shared Element Transitions and Dynamic Color support that adapts to your device wallpaper.
+                    </p>
+                </div>
+                <div class="flex-1 flex justify-center">
+                    <img src="screenshots/Screenshot_20260324_114721.png" alt="Material You Design" class="app-screenshot">
+                </div>
+            </div>
+
+            <!-- Feature 6: Cloud Sync & Offline Support -->
+            <div class="flex flex-col md:flex-row-reverse items-center gap-16">
+                <div class="flex-1 space-y-6">
+                    <div class="inline-flex items-center justify-center p-3 bg-teal-100 rounded-2xl text-teal-600 mb-2">
+                        <i class="fas fa-cloud text-2xl"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold">Cloud Sync & Backup / Offline Support</h3>
+                    <p class="text-lg text-slate-600 leading-relaxed">
+                        <strong class="text-slate-900">Cloud Sync & Backup:</strong> Securely sync your recipe collection across devices using Firebase Authentication and Firestore. Your recipes are always available, even if you switch devices.<br><br>
+                        <strong class="text-slate-900">Offline Support:</strong> All your recipes are cached locally using a Room database, ensuring you can cook even without an internet connection.
+                    </p>
+                </div>
+                <div class="flex-1 flex justify-center border-b md:border-b-0 pb-16 md:pb-0">
+                    <img src="screenshots/Screenshot_20260324_114632.png" alt="Cloud Sync & Backup" class="app-screenshot border border-slate-200">
+                </div>
             </div>
         </div>
     </section>
